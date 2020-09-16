@@ -16,7 +16,11 @@ export default class TacosAdmin extends Component
         .then(reponse => reponse.data)
         .then(tacos => {
             this.setState({tacos: tacos.map(taco =>{
-                return <div key={taco.id}>{taco.name}</div>
+                return <div key={taco.id}>
+                    <h6>{taco.name}</h6>
+                    <div>Cantidad: {taco.quantity}</div>
+                    <div>¿Es picante?: {taco.pica}</div>
+                    <br></br></div>
             })})
         });
     }
@@ -26,6 +30,8 @@ export default class TacosAdmin extends Component
         return (
             <Container>
                 <PageTitle text='El Taquito Feliz' color='#C30000' fontSize={5}/>
+                <br></br>
+                <h3>Menú</h3>
                 {this.state.tacos}
                 <h3>Agregar taco:</h3>
                 <form>
