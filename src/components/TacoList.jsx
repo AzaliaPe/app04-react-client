@@ -9,8 +9,7 @@ export default class TacoList extends Component
         currentTaco: {}
     }
 
-    tacoClick = id =>
-    {
+    tacoClick = id =>{
         console.log(id);
         axios.get(`http://localhost:5000/${id}`)
         .then(reponse => reponse.data)
@@ -34,16 +33,15 @@ export default class TacoList extends Component
         const {name, quantity, pica} = this.state.currentTaco;
         return (
             <Fragment>
-                <ul className='list-group'>
-                    {this.state.tacos}
-                </ul>
-
                 <div className="card" style={{width: '18rem'}}>
                     <div className="card-body">
                         <h5 className="card-title">{name}</h5>
                         <p className="card-text">La orden viene con {quantity} tacos y {pica} pica.</p>
                     </div>
                 </div>
+                <ul className='list-group'>
+                    {this.state.tacos}
+                </ul>
             </Fragment>
         );
     }
