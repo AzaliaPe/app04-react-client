@@ -33,7 +33,7 @@ export default class AddTaco extends Component{
                                 <span class="input-group-text" id="inputGroup-sizing-default">Nombre</span>
                             </div>
                             <input onChange={this.catchName} className='form-control' 
-                            type="text" name="" id="taco-name" placeholder='eje: tu taco'
+                            type="text" name="" id="taco-name" placeholder='Eje: Tu taco'
                             aria-label="Default" aria-describedby="inputGroup-sizing-default"/>
                         </div>
                         <div class="input-group mb-3">
@@ -41,7 +41,7 @@ export default class AddTaco extends Component{
                                 <span class="input-group-text" id="inputGroup-sizing-default">Cantidad</span>
                             </div>
                             <input onChange={this.catchQuantity} className='form-control' 
-                            type="number" name="" id="taco-quantity" placeholder='eje: tu taco'
+                            type="number" name="" id="taco-quantity" placeholder='Ingresa un número'
                             aria-label="Default" aria-describedby="inputGroup-sizing-default"/>
                         </div>
                         <div class="input-group mb-3">
@@ -57,7 +57,7 @@ export default class AddTaco extends Component{
                         <br/>
                         <br/>
                         <div>
-                            <button onClick={this.sendTaco} className='btn btn-secondary' id="btn-post-taco">Crear taco</button>
+                            <button onClick={this.sendTaco} className='btn btn-success' id="btn-post-taco">Crear taco</button>
                         </div>
                     </div>
             </Fragment>

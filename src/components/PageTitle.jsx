@@ -13,7 +13,8 @@ export default class PageTitle extends Component
             <Fragment>
                 <h1 style={{
                     color: this.props.color,
-                    fontSize: `${this.state.fontSize}em`
+                    fontSize: `${this.state.fontSize}em`,
+                    textAlign: 'center'
                 }}>{this.props.text}</h1>
             </Fragment>
         );

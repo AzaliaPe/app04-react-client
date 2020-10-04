@@ -13,10 +13,10 @@ export default class Routes extends Component{
                 <nav className="navbar navbar-dark bg-dark">
                     <ul className="nav justify-content-end">
                         <li className="nav-item">
-                            <Link className='nav-link active text-light' to='/'>home</Link>
+                            <Link className='nav-link active text-light' to='/'>Home</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className='nav-link active text-light' to='/addtaco'>agregar tacos</Link>
+                            <Link className='nav-link active text-light' to='/addtaco'>Agregar tacos</Link>
                         </li>
                     </ul>
                 </nav>
